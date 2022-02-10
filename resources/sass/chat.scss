@@ -1,0 +1,39 @@
+.messages {
+    margin: 10px 0;
+    border:solid 1px #777777;
+    border-radius:5px;
+
+    height:250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .messages-inner {
+        padding: 20px 10px 10px;
+
+        .message {
+            margin-top:10px;
+            display:flex;
+            justify-content:flex-start;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            &.message-from-me {
+                justify-content:flex-end;
+
+                & > div {
+                    background:#dfffdf;
+                }
+            }
+
+            & > div {
+                display:inline-block;
+                max-width:75%;
+                background:#dfdfdf;
+                border-radius: 15px;
+                padding:10px 15px;
+            }
+        }
+    }
+}

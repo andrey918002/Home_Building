@@ -1,0 +1,20 @@
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 7px;
+    text-decoration: none;
+    color: black;
+
+    strong{
+        font-size: larger;
+    }
+    .no_read{
+        background: #ebe6fe;
+        border-radius: 3px;
+        padding: 3px;
+    }
+    :last-child{
+        color: #767e85;
+    }
+}

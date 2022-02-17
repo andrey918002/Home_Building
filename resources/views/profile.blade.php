@@ -88,7 +88,10 @@
                                     <div class="row mb-3">
                                         <label class="col-md-4 col-form-label text-md-end">{{ __('Position') }}</label>
                                         <div class="col-md-8">
-                                            <input type="text" class="form-control @error('position') is-invalid @enderror" name="position" placeholder="Position" value="{{ $user['position'] }}"/>
+                                            <select class="form-control" @error('position') is-invalid @enderror name="position">
+                                                <option value=""></option>
+                                                <option value="admin" @if($user['position'] == 'admin') selected="selected" @endif>Admin</option>
+                                            </select>
                                             @error('position')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>

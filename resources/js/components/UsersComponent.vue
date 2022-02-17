@@ -14,7 +14,7 @@
                 :key="user.id"
                 style="padding: 10px"
             >
-                <img :src="img" style="width: 100%" alt="none">
+                <img :src="user.image ? '/storage/' + user.image : img" style="width: 100%" alt="none">
                 <div>{{ user.name}}</div>
                 <div>{{ user.email}}</div>
                 <div>{{ user.position}}</div>

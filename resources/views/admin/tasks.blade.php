@@ -21,7 +21,7 @@
                             @foreach($tasks as $task)
                                 <tr>
                                     <td>{{ $task->title }}</td>
-                                    <td>{{ $task->description }}</td>>
+                                    <td>{{ $task->description }}</td>
                                     <td>{{ $task->todo_time }}</td>
                                     <td style="display: flex; flex-direction: row">
                                         <a href="#" class="btn btn-primary">{{ __('Edit') }}</a>

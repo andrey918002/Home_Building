@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\CalendarController;
 
 
 /*
@@ -32,6 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/tasks', [TaskController::class, 'showList'])->name('tasks');
     Route::get('/task-add', [TaskController::class, 'showAdd'])->name('task.add');
     Route::post('/task-save', [TaskController::class, 'save'])->name('task.save');
+
+    Route::resource('/calendar', CalendarController::class);
 
     Route::get('ajax/chat-messages', [ChatController::class, 'getMessages']);
     Route::post('ajax/chat-message', [ChatController::class, 'sendMessage']);

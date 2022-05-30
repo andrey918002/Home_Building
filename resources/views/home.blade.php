@@ -10,7 +10,7 @@
             <li> <a href="/users" class="nav-link text-white"> <i class="fa fa-first-order"></i><span class="ms-2">Employees</span></a> </li>
             <li> <a href="/tasks" class="nav-link text-white"> <i class="fa fa-first-order"></i><span class="ms-2">Projects</span></a> </li>
             <li> <a href="/chats" class="nav-link text-white"> <i class="fa fa-cog"></i><span class="ms-2">Messages</span></a> </li>
-            <li> <a href="#" class="nav-link text-white"> <i class="fa fa-bookmark"></i><span class="ms-2">Calendar</span> </a> </li>
+            <li> <a href="/calendar" class="nav-link text-white"> <i class="fa fa-bookmark"></i><span class="ms-2">Calendar</span> </a> </li>
         </ul>
         <hr>
         <div class="dropdown"> <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> <strong> {{ Auth::user()->name }} </strong> </a>
